@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CUDA C++: Launch",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/b_t1/CDSM",
+            "args": [
+                "-q /home/ludan/DSM/test_data/example_q_01.in -d /home/ludan/DSM/test_data/example_g_01.in --gpu 1"
+            ],
+            "miDebuggerPath": "/home/ludan/.conda/envs/qxk/bin/cuda-gdb",
+            "cwd": "${workspaceFolder}",
+            "logging": {
+                "engineLogging": true,
+                "trace": true,
+                "traceResponse": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+		{
+            "type": "shell",
+            "label": "Run CDSM with Args",
+            "command": "${workspaceFolder}/b_t1/CDSM",
+            "args": [
+                "-q","/home/ludan/DSM/test_data/example_q_01.in",  // 确保 -q 后跟一个值
+                "-d","/home/ludan/DSM/test_data/example_g_01.in",
+                "--gpu","1"
+            ],
+            "group": {
+                "kind": "none",
+                "isDefault": true
+            },
+            "problemMatcher": ["$nvcc","$gcc"],
+            "detail": "Running CDSM with specified arguments"
+        }
+    ]
+}
